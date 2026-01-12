@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio | Nguyễn Tuấn Anh</title>
+    <title>DevProfile | Nguyễn Tuấn Anh</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -163,13 +164,9 @@
                 <p>
                     Nếu các nội dung chia sẻ của tôi hữu ích với bạn, hãy cân nhắc mời tôi một ly cà phê. Sự ủng hộ của bạn là động lực để tôi tiếp tục sáng tạo!
                 </p>
-                <a href="#" class="coffee-btn">
+                <a href="#" class="coffee-btn" id="donate-btn">
                     <i class="fas fa-coffee"></i> Buy me a Coffee
                 </a>
-                <br><br>
-                <small style="color: var(--text-muted)">Hoặc quét mã QR qua ví Momo / Banking</small>
-                <br/>
-                <img src="images/qr.png" alt="anhntcn_qr" />
             </div>
         </div>
     </section>
@@ -187,6 +184,27 @@
             <p style="font-size: 0.8rem; margin-top: 10px;">Designed with <i class="fas fa-heart" style="color: red;"></i> and minimal code.</p>
         </div>
     </footer>
+
+    <!-- Donate Modal -->
+    <div id="donate-modal" class="modal">
+        <div class="modal-content stroke-gradient">
+            <span class="close-modal">&times;</span>
+            <h3 style="margin-bottom: 10px; color: var(--accent-primary);">Cảm ơn bạn đã ủng hộ! ❤️</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">Quét mã QR bên dưới để donate</p>
+            
+            <div class="qr-container">
+                <img src="images/qr.png" alt="anhntcn_qr" class="qr-code">
+            </div>
+            
+            <div class="bank-info">
+                <p style="margin-bottom: 5px;"><i class="fas fa-university"></i> <strong>VPBank</strong></p>
+                <div class="copy-box" style="background: rgba(255,255,255,0.05); padding: 8px; border-radius: 5px; margin-bottom: 5px; cursor: pointer;" title="Click để copy">
+                    <span id="bank-acc" style="font-family: var(--font-code); color: var(--accent-secondary);">555100001111</span> <i class="fas fa-copy" style="font-size: 0.8rem;"></i>
+                </div>
+                <p style="font-size: 0.9rem;">NGUYEN TUAN ANH</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="script.js"></script>

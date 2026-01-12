@@ -62,3 +62,39 @@ if (menuToggle && navLinks) {
         });
     });
 }
+
+// 3. Donate Modal Logic
+const donateBtn = document.getElementById('donate-btn');
+const modal = document.getElementById('donate-modal');
+const closeModal = document.querySelector('.close-modal');
+const copyBox = document.querySelector('.copy-box');
+
+if (donateBtn && modal && closeModal) {
+    // Open Modal
+    donateBtn.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent jump to # anchor
+        modal.style.display = 'flex';
+    });
+
+    // Close Modal when click X
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Close Modal when click outside
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    // Copy Bank Account
+    if (copyBox) {
+        copyBox.addEventListener('click', () => {
+            const accNum = document.getElementById('bank-acc').innerText;
+            navigator.clipboard.writeText(accNum).then(() => {
+                alert('Đã copy số tài khoản: ' + accNum);
+            });
+        });
+    }
+}
