@@ -10,7 +10,7 @@ function type() {
     if (!textElement) return;
 
     const currentRole = roles[roleIndex];
-    
+
     if (isDeleting) {
         textElement.textContent = "[ " + currentRole.substring(0, charIndex - 1) + " ]";
         charIndex--;
@@ -39,20 +39,26 @@ const navLinks = document.querySelector('.nav-links');
 
 if (menuToggle && navLinks) {
     menuToggle.addEventListener('click', () => {
-        // Toggle mobile menu logic
-        if (navLinks.style.display === 'flex') {
-            navLinks.style.display = 'none';
+        navLinks.classList.toggle('active');
+
+        // Optional: Change icon from bars to times (X)
+        const icon = menuToggle.querySelector('i');
+        if (navLinks.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
         } else {
-            navLinks.style.display = 'flex';
-            navLinks.style.flexDirection = 'column';
-            navLinks.style.position = 'absolute';
-            navLinks.style.top = '70px';
-            navLinks.style.right = '0';
-            navLinks.style.background = '#0f172a';
-            navLinks.style.width = '100%';
-            navLinks.style.padding = '20px';
-            navLinks.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
-            navLinks.style.zIndex = '999';
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
         }
+    });
+
+    // Close menu when clicking a link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        });
     });
 }
