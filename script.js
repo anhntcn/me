@@ -1,6 +1,6 @@
 // 1. Typing Effect Logic
 const textElement = document.querySelector('.typing-text span');
-const roles = ["Full Stack Developer", "Python Expert", "PHP Developer", "Open Source Contributor"];
+const roles = ["Nguyễn Tuấn Anh", "Full Stack Developer", "Python Expert", "PHP Developer", "Open Source Contributor"];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
