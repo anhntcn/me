@@ -1,6 +1,6 @@
 // 1. Typing Effect Logic
 const textElement = document.querySelector('.typing-text span');
-const roles = ["Full Stack Developer", "Python Expert", "Vue.js Lover", "Open Source Contributor"];
+const roles = ["Full Stack Developer", "Python Expert", "PHP Developer", "Open Source Contributor"];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -12,10 +12,10 @@ function type() {
     const currentRole = roles[roleIndex];
 
     if (isDeleting) {
-        textElement.textContent = "[ " + currentRole.substring(0, charIndex - 1) + " ]";
+        textElement.textContent = "[" + currentRole.substring(0, charIndex - 1) + "]";
         charIndex--;
     } else {
-        textElement.textContent = "[ " + currentRole.substring(0, charIndex + 1) + " ]";
+        textElement.textContent = "[" + currentRole.substring(0, charIndex + 1) + "]";
         charIndex++;
     }
 
