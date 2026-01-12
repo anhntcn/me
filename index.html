@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio | Nguyễn Tuấn Anh</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav">
+            <a href="#" class="logo">&lt;DevProfile /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#about">Về Tôi</a></li>
+                <li><a href="#skills">Kỹ Năng</a></li>
+                <li><a href="#services">Dịch Vụ</a></li>
+                <li><a href="#donation">Ủng Hộ</a></li>
+                <li><a href="#contact" style="color: var(--accent-primary)">Liên Hệ</a></li>
+            </ul>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-content">
+            <h2 class="typing-text">Hello, World! Tôi là <span style="color: var(--text-main)">Nguyễn Tuấn Anh</span></h2>
+            <h1>Xây dựng Giải pháp<br>Phần mềm Hiện đại</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 40px;">
+                Lập trình viên Fullstack với đam mê tối ưu hóa hệ thống và tích hợp AI. 
+                Biến ý tưởng phức tạp thành sản phẩm mượt mà.
+            </p>
+            <div>
+                <a href="#contact" class="btn btn-primary">Liên h</a>
+                <a href="https://github.com/anhntcn" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Về Tôi</h2>
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="images/me.png" alt="anhnt">
+                </div>
+                <div class="about-text">
+                    <p>
+                        Tôi là một lập trình viên phần mềm với tư duy sản phẩm sâu sắc. Không chỉ viết code, tôi xây dựng các hệ thống có khả năng mở rộng và trải nghiệm người dùng tối ưu.
+                    </p>
+                    <p>
+                        Sở trường của tôi là kết hợp sức mạnh của <strong>Backend (Python/Django)</strong> với sự linh hoạt của <strong>Frontend (Vue.js)</strong>. Tôi cũng có kinh nghiệm sâu sắc trong việc triển khai DevOps và tích hợp các API trí tuệ nhân tạo vào ứng dụng thực tế.
+                    </p>
+                    <div class="stat-grid">
+                        <div class="stat-item stroke-gradient">
+                            <strong>5+</strong> <span>Năm kinh nghiệm</span>
+                        </div>
+                        <div class="stat-item stroke-gradient">
+                            <strong>50+</strong> <span>Dự án hoàn thành</span>
+                        </div>
+                        <div class="stat-item stroke-gradient">
+                            <strong>24/7</strong> <span>Đam mê công nghệ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="background-color: rgba(255,255,255,0.02);">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="skills-wrapper">
+                <!-- Frontend -->
+                <div class="skill-card">
+                    <h3><i class="fab fa-vuejs"></i> Frontend</h3>
+                    <div class="tech-tags">
+                        <span class="tag">HTML5/CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">Responsive UI</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-card">
+                    <h3><i class="fab fa-python"></i> Backend & APIs</h3>
+                    <div class="tech-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Odoo ERP</span>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-card">
+                    <h3><i class="fas fa-database"></i> Database</h3>
+                    <div class="tech-tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Redis</span>
+                    </div>
+                </div>
+
+                <!-- DevOps & Tools -->
+                <div class="skill-card">
+                    <h3><i class="fas fa-server"></i> DevOps & Tools</h3>
+                    <div class="tech-tags">
+                        <span class="tag">Git / GitHub</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Google Cloud</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / What I Do -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Tôi Có Thể Giúp Gì?</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3><i class="fas fa-laptop-code" style="color: var(--accent-primary)"></i> Web Development</h3>
+                    <p>Phát triển ứng dụng web trọn gói (Fullstack) từ giao diện người dùng đến hệ thống xử lý backend phức tạp.</p>
+                </div>
+                <div class="service-item">
+                    <h3><i class="fas fa-cogs" style="color: var(--accent-secondary)"></i> API & System Design</h3>
+                    <p>Thiết kế RESTful APIs hiệu năng cao, xây dựng kiến trúc Microservices và tích hợp hệ thống ERP (Odoo).</p>
+                </div>
+                <div class="service-item">
+                    <h3><i class="fas fa-brain" style="color: #f472b6"></i> AI Integration</h3>
+                    <p>Tích hợp các mô hình AI/LLM vào ứng dụng để tự động hóa quy trình và nâng cao trải nghiệm người dùng.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donation">
+        <div class="container">
+            <div class="donation-box">
+                <h2 style="margin-bottom: 20px;">Hỗ Trợ & Donate</h2>
+                <p>
+                    Nếu các nội dung chia sẻ của tôi hữu ích với bạn, hãy cân nhắc mời tôi một ly cà phê. Sự ủng hộ của bạn là động lực để tôi tiếp tục sáng tạo!
+                </p>
+                <a href="#" class="coffee-btn">
+                    <i class="fas fa-coffee"></i> Buy me a Coffee
+                </a>
+                <br><br>
+                <small style="color: var(--text-muted)">Hoặc quét mã QR qua ví Momo / Banking (Thêm ảnh QR của bạn tại đây)</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Anhnt. All rights reserved.</p>
+            <p style="font-size: 0.8rem; margin-top: 10px;">Designed with <i class="fas fa-heart" style="color: red;"></i> and minimal code.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
