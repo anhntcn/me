@@ -931,13 +931,41 @@ footer {
         font-size: 1.5rem;
     }
 
+    section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        margin-bottom: 35px;
+    }
+
+    /* minmax(0, 1fr) lets the column shrink below its content's min width */
     .about-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
     }
 
     .about-img {
         height: 250px;
-        margin-bottom: 30px;
+    }
+
+    .stat-grid {
+        gap: 10px;
+    }
+
+    .stat-item {
+        min-width: 0;
+        padding: 14px 6px;
+    }
+
+    .stat-item strong {
+        font-size: 1.35rem;
+    }
+
+    .stat-item span {
+        display: block;
+        font-size: 0.78rem;
+        line-height: 1.35;
     }
 
     .btn {
