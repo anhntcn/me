@@ -3,14 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevProfile | Nguyễn Tuấn Anh</title>
+    <title data-i18n="metaTitle">Nguyễn Tuấn Anh | Python Backend & AI Integration</title>
+    <meta name="description" data-i18n-content="metaDesc" content="Nguyễn Tuấn Anh — kỹ sư Python Backend tại Hà Nội, phát triển hệ thống ERP/HRMS từ 2019, 3 năm Team Lead, đang tích hợp LLM (OpenAI, Gemini) vào sản phẩm thực tế.">
+    <meta name="author" content="Nguyễn Tuấn Anh">
+    <link rel="canonical" href="https://anhntcn.github.io/me/">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph / Social sharing -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://anhntcn.github.io/me/">
+    <meta property="og:title" content="Nguyễn Tuấn Anh | Python Backend & AI Integration">
+    <meta property="og:description" content="Kỹ sư Python Backend từ 2019 — ERP/HRMS, Team Lead, tích hợp LLM vào sản phẩm thực tế.">
+    <meta property="og:image" content="https://anhntcn.github.io/me/images/me.jpg">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nguyễn Tuấn Anh",
+        "alternateName": "Nguyen Tuan Anh",
+        "url": "https://anhntcn.github.io/me/",
+        "image": "https://anhntcn.github.io/me/images/me.jpg",
+        "jobTitle": "Python Backend Developer",
+        "email": "mailto:anhntcn@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Hà Nội", "addressCountry": "VN" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Transport and Communications" },
+        "knowsAbout": ["Python", "FastAPI", "Django", "Odoo", "ERP", "LLM integration", "Docker", "PostgreSQL"],
+        "sameAs": ["https://github.com/anhntcn", "https://www.linkedin.com/in/anhntcn/"]
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- FontAwesome (Icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -22,187 +54,341 @@
     <!-- Header -->
     <header>
         <div class="container nav">
-            <a href="#" class="logo">&lt;DevProfile /&gt;</a>
+            <a href="#hero" class="logo">&lt;anhnt /&gt;</a>
             <ul class="nav-links">
-                <li><a href="#about">Về Tôi</a></li>
-                <li><a href="#skills">Kỹ Năng</a></li>
-                <li><a href="#services">Dịch Vụ</a></li>
-                <li><a href="#donation">Ủng Hộ</a></li>
-                <li><a href="#contact" style="color: var(--accent-primary)">Liên Hệ</a></li>
+                <li><a href="#about" data-i18n="navAbout">Về Tôi</a></li>
+                <li><a href="#experience" data-i18n="navExperience">Kinh Nghiệm</a></li>
+                <li><a href="#projects" data-i18n="navProjects">Dự Án</a></li>
+                <li><a href="#skills" data-i18n="navSkills">Kỹ Năng</a></li>
+                <li><a href="#services" data-i18n="navServices">Dịch Vụ</a></li>
+                <li><a href="#contact" class="nav-cta" data-i18n="navContact">Liên Hệ</a></li>
             </ul>
-            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <div class="nav-actions">
+                <button type="button" class="lang-switch" aria-label="Switch to English">EN</button>
+                <button type="button" class="menu-toggle" aria-label="Mở menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container hero-content">
-            <h2 class="typing-text">Xin chào, tôi là <span style="color: var(--text-main)">Nguyễn Tuấn Anh</span></h2>
-            <h1>Xây dựng Giải pháp<br>Phần mềm Hiện đại</h1>
-            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 40px;">
-                Lập trình viên Fullstack với đam mê tối ưu hóa hệ thống và tích hợp AI. 
-                Biến ý tưởng phức tạp thành sản phẩm mượt mà.
-            </p>
-            <div>
-                <a href="#contact" class="btn btn-primary">Liên hệ</a>
-                <a href="https://github.com/anhntcn" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">Về Tôi</h2>
-            <div class="about-grid">
-                <div class="about-img stroke-gradient">
-                    <img src="images/me.png" alt="anhnt">
-                </div>
-                <div class="about-text">
-                    <p>
-                        Tôi là một lập trình viên phần mềm với tư duy sản phẩm sâu sắc. Không chỉ viết code, tôi xây dựng các hệ thống có khả năng mở rộng và trải nghiệm người dùng tối ưu.
-                    </p>
-                    <p>
-                        Sở trường của tôi là kết hợp sức mạnh của <strong>Backend (Python/Django)</strong> với sự linh hoạt của <strong>Frontend (Vue.js)</strong>. Tôi cũng có kinh nghiệm sâu sắc trong việc triển khai DevOps và tích hợp các API trí tuệ nhân tạo vào ứng dụng thực tế.
-                    </p>
-                    <div class="stat-grid">
-                        <div class="stat-item stroke-gradient">
-                            <strong>8+</strong> <span>Năm kinh nghiệm</span>
-                        </div>
-                        <div class="stat-item stroke-gradient">
-                            <strong>80+</strong> <span>Dự án hoàn thành</span>
-                        </div>
-                        <div class="stat-item stroke-gradient">
-                            <strong>24/7</strong> <span>Đam mê công nghệ</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" style="background-color: rgba(255,255,255,0.02);">
-        <div class="container">
-            <h2 class="section-title">Tech Stack</h2>
-            <div class="skills-wrapper">
-                <!-- Frontend -->
-                <div class="skill-card">
-                    <h3><i class="fab fa-vuejs"></i> Frontend</h3>
-                    <div class="tech-tags">
-                        <span class="tag">HTML5/CSS3</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Vue.js</span>
-                        <span class="tag">Bootstrap</span>
-                        <span class="tag">Responsive UI</span>
-                    </div>
-                </div>
-
-                <!-- Backend -->
-                <div class="skill-card">
-                    <h3><i class="fab fa-python"></i> Backend & APIs</h3>
-                    <div class="tech-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">PHP</span>
-                        <span class="tag">Django</span>
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">Flask</span>
-                        <span class="tag">Odoo ERP</span>
-                    </div>
-                </div>
-
-                <!-- Database -->
-                <div class="skill-card">
-                    <h3><i class="fas fa-database"></i> Database</h3>
-                    <div class="tech-tags">
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">Redis</span>
-                    </div>
-                </div>
-
-                <!-- DevOps & Tools -->
-                <div class="skill-card">
-                    <h3><i class="fas fa-server"></i> DevOps & Tools</h3>
-                    <div class="tech-tags">
-                        <span class="tag">Git / GitHub</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">Linux</span>
-                        <span class="tag">Google Cloud</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services / What I Do -->
-    <section id="services">
-        <div class="container">
-            <h2 class="section-title">Tôi Có Thể Giúp Gì?</h2>
-            <div class="service-list">
-                <div class="service-item">
-                    <h3><i class="fas fa-laptop-code" style="color: var(--accent-primary)"></i> Web Development</h3>
-                    <p>Phát triển ứng dụng web trọn gói (Fullstack) từ giao diện người dùng đến hệ thống xử lý backend phức tạp.</p>
-                </div>
-                <div class="service-item">
-                    <h3><i class="fas fa-cogs" style="color: var(--accent-secondary)"></i> API & System Design</h3>
-                    <p>Thiết kế RESTful APIs hiệu năng cao, xây dựng kiến trúc Microservices và tích hợp hệ thống ERP (Odoo).</p>
-                </div>
-                <div class="service-item">
-                    <h3><i class="fas fa-brain" style="color: #f472b6"></i> AI Integration</h3>
-                    <p>Tích hợp các mô hình AI/LLM vào ứng dụng để tự động hóa quy trình và nâng cao trải nghiệm người dùng.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Donation Section -->
-    <section id="donation">
-        <div class="container">
-            <div class="donation-box stroke-gradient">
-                <h2 style="margin-bottom: 20px;">Hỗ Trợ & Donate</h2>
-                <p>
-                    Nếu các nội dung chia sẻ của tôi hữu ích với bạn, hãy cân nhắc mời tôi một ly cà phê. Sự ủng hộ của bạn là động lực để tôi tiếp tục sáng tạo!
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container hero-content">
+                <p class="typing-text"><span data-i18n="heroGreeting">Xin chào, tôi là</span> <span class="typed">Nguyễn Tuấn Anh</span></p>
+                <h1 data-i18n="heroTitle">Xây dựng hệ thống Backend<br>&amp; đưa AI vào sản phẩm thật</h1>
+                <p class="hero-sub" data-i18n="heroSub">
+                    Kỹ sư Python Backend với <span class="js-exp-years">7+</span> năm kinh nghiệm — từ hệ thống ERP/HRMS, dẫn dắt team phát triển, đến tích hợp LLM để tự động hóa vận hành doanh nghiệp.
                 </p>
-                <a href="#" class="coffee-btn" id="donate-btn">
-                    <i class="fas fa-coffee"></i> Buy me a Coffee
-                </a>
+                <div>
+                    <a href="#contact" class="btn btn-primary" data-i18n="heroCta">Liên hệ</a>
+                    <a href="https://github.com/anhntcn" target="_blank" rel="noopener" class="btn btn-outline"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer / Contact -->
-    <footer id="contact">
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title" data-i18n="aboutTitle">Về Tôi</h2>
+                <div class="about-grid">
+                    <div class="about-img stroke-gradient">
+                        <picture>
+                            <source srcset="images/me.webp" type="image/webp">
+                            <img src="images/me.jpg" width="800" height="647" loading="lazy" alt="Ảnh chân dung Nguyễn Tuấn Anh" data-i18n-alt="aboutImgAlt">
+                        </picture>
+                    </div>
+                    <div class="about-text">
+                        <p data-i18n="aboutP1">
+                            Tôi là Tuấn Anh, kỹ sư phần mềm tại Hà Nội, tốt nghiệp ngành Công nghệ Thông tin – Đại học Giao thông Vận tải. Công việc chính của tôi là xây dựng hệ thống backend bằng <strong>Python (FastAPI, Django, Flask)</strong> và <strong>Odoo</strong> cho các bài toán ERP, HRMS và quản lý vận hành.
+                        </p>
+                        <p data-i18n="aboutP2">
+                            Tôi thích cân nhắc kỹ các trường hợp biên, rủi ro và khả năng mở rộng trước khi bắt tay vào làm, để hệ thống chạy ổn định lâu dài. Gần đây tôi tập trung đưa các mô hình <strong>AI/LLM (OpenAI, Gemini)</strong> vào sản phẩm thực tế — không chỉ chạy được, mà còn kiểm soát được chi phí và độ tin cậy.
+                        </p>
+                        <div class="stat-grid">
+                            <div class="stat-item stroke-gradient">
+                                <strong class="js-exp-years">7+</strong> <span data-i18n="statYears">Năm kinh nghiệm</span>
+                            </div>
+                            <div class="stat-item stroke-gradient">
+                                <strong>3</strong> <span data-i18n="statLead">Năm dẫn dắt team</span>
+                            </div>
+                            <div class="stat-item stroke-gradient">
+                                <strong data-i18n="statLeadsNum">~1.200</strong> <span data-i18n="statLeads">Lead/ngày đánh giá bằng AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section-alt">
+            <div class="container">
+                <h2 class="section-title" data-i18n="expTitle">Kinh Nghiệm</h2>
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-head">
+                                <span class="timeline-date" data-i18n="exp1Date">03/2024 — Hiện tại</span>
+                                <h3 data-i18n="exp1Role">Developer</h3>
+                                <p class="timeline-company">Medinet Media JSC · <span data-i18n="locHanoi">Hà Nội</span></p>
+                            </div>
+                            <ul data-i18n="exp1Body">
+                                <li>Phát triển phần mềm ERP/HRMS với Python, FastAPI, Docker và Odoo.</li>
+                                <li>Tích hợp OpenAI và Gemini để tự động đánh giá chất lượng dữ liệu bán hàng; xây dựng bot trợ lý nội bộ.</li>
+                                <li>Xây dựng Chrome extension kết nối dữ liệu khách hàng vào ERP và các công cụ thu thập dữ liệu.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-head">
+                                <span class="timeline-date">09/2020 — 03/2024</span>
+                                <h3 data-i18n="exp2Role">Development Team Lead</h3>
+                                <p class="timeline-company">WeUp Group JSC · <span data-i18n="locHanoi">Hà Nội</span></p>
+                            </div>
+                            <ul data-i18n="exp2Body">
+                                <li>Dẫn dắt team ~5 lập trình viên phát triển các dự án ERP với Python, Odoo, Flask.</li>
+                                <li>Lập kế hoạch, phân chia công việc, theo dõi tiến độ và review code — giữ tỷ lệ đúng hạn gần như tuyệt đối.</li>
+                                <li>Xây dựng hệ thống HRMS nội bộ và nền tảng quản lý quảng cáo tập trung.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-head">
+                                <span class="timeline-date">03/2019 — 07/2020</span>
+                                <h3 data-i18n="exp3Role">Developer</h3>
+                                <p class="timeline-company">Langmaster English Center · <span data-i18n="locHanoi">Hà Nội</span></p>
+                            </div>
+                            <ul data-i18n="exp3Body">
+                                <li>Phụ trách phần quản lý marketing trong hệ thống CRM / học trực tuyến (PHP, Zend Framework) phục vụ ~100 người dùng.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-head">
+                                <span class="timeline-date">2017 — 03/2019</span>
+                                <h3>WordPress Developer</h3>
+                                <p class="timeline-company" data-i18n="exp4Company">Công ty TNHH Giải Pháp Phần Mềm PVESER</p>
+                            </div>
+                            <ul data-i18n="exp4Body">
+                                <li>Xây dựng ~80–100 website WordPress cho khách hàng: tin tức, bán hàng (WooCommerce), đặt tour du lịch…</li>
+                                <li>Phát triển, tùy biến theme với PHP, MySQL, jQuery, ACF, Elementor, Flatsome; tích hợp Google Maps API.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item timeline-edu">
+                        <div class="timeline-card">
+                            <div class="timeline-head">
+                                <span class="timeline-date">2013 — 2017</span>
+                                <h3 data-i18n="eduRole">Kỹ sư Công nghệ Thông tin</h3>
+                                <p class="timeline-company" data-i18n="eduSchool">Đại học Giao thông Vận tải Hà Nội</p>
+                            </div>
+                            <ul data-i18n="eduBody">
+                                <li><i class="fas fa-award" aria-hidden="true"></i> Giải Ba Nghiên cứu khoa học sinh viên (năm nhất) — đề tài "Mô phỏng thuật toán sắp xếp bằng hoạt ảnh" (C++).</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Projects / Highlights Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title" data-i18n="projTitle">Dự Án Tiêu Biểu</h2>
+                <div class="project-list">
+                    <article class="project-card">
+                        <span class="project-metric" data-i18n="proj1Metric">-95% thời gian thủ công</span>
+                        <h3><i class="fas fa-robot" aria-hidden="true"></i> <span data-i18n="proj1Title">Chấm điểm lead bằng LLM</span></h3>
+                        <p data-i18n="proj1Desc">Dùng OpenAI và Gemini tự động đánh giá ~1.200 lead/ngày từ dữ liệu hội thoại bán hàng, kèm bot trợ lý nội bộ cho ~40 người dùng. Áp dụng structured output, xử lý theo lô và kiểm soát chi phí token.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span><span class="tag">OpenAI</span><span class="tag">Gemini</span><span class="tag">FastAPI</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <span class="project-metric" data-i18n="proj2Metric">Toàn bộ sale các chi nhánh</span>
+                        <h3><i class="fab fa-chrome" aria-hidden="true"></i> <span data-i18n="proj2Title">Chrome Extension kết nối ERP</span></h3>
+                        <p data-i18n="proj2Desc">Extension đọc dữ liệu khách hàng từ các công cụ chat bán hàng và đẩy thẳng vào ERP, loại bỏ nhập liệu thủ công. Trở thành công cụ không thể thiếu của đội sale.</p>
+                        <div class="tech-tags">
+                            <span class="tag">JavaScript</span><span class="tag">Chrome API</span><span class="tag">Odoo</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <span class="project-metric" data-i18n="proj3Metric">~80–100 nhân viên</span>
+                        <h3><i class="fas fa-users-cog" aria-hidden="true"></i> <span data-i18n="proj3Title">Hệ thống HRMS nội bộ</span></h3>
+                        <p data-i18n="proj3Desc">Hệ thống quản lý nhân sự trên nền Odoo do team tôi dẫn dắt xây dựng, phục vụ vận hành hằng ngày của toàn công ty.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span><span class="tag">Odoo</span><span class="tag">PostgreSQL</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <span class="project-metric" data-i18n="proj4Metric">5–6 website</span>
+                        <h3><i class="fas fa-bullhorn" aria-hidden="true"></i> <span data-i18n="proj4Title">Nền tảng quản lý quảng cáo</span></h3>
+                        <p data-i18n="proj4Desc">Thiết kế và triển khai thí điểm nền tảng quản lý quảng cáo tập trung cho nhiều website WordPress từ một nơi duy nhất.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span><span class="tag">Docker</span><span class="tag">PostgreSQL</span><span class="tag">WordPress</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-alt">
+            <div class="container">
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="skills-wrapper">
+                    <div class="skill-card">
+                        <h3><i class="fab fa-python" aria-hidden="true"></i> Backend & APIs</h3>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">Odoo</span>
+                            <span class="tag">Celery</span>
+                            <span class="tag">WebSocket</span>
+                            <span class="tag">PHP / Laravel</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3><i class="fas fa-brain" aria-hidden="true"></i> AI / LLM</h3>
+                        <div class="tech-tags">
+                            <span class="tag">OpenAI API</span>
+                            <span class="tag">Gemini API</span>
+                            <span class="tag">Structured Output</span>
+                            <span class="tag">Pydantic</span>
+                            <span class="tag">Prompt Engineering</span>
+                            <span class="tag">Claude Code</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3><i class="fas fa-database" aria-hidden="true"></i> Database</h3>
+                        <div class="tech-tags">
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Redis</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3><i class="fas fa-server" aria-hidden="true"></i> DevOps & Cloud</h3>
+                        <div class="tech-tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">Git / GitHub</span>
+                            <span class="tag">Google Cloud</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3><i class="fas fa-sitemap" aria-hidden="true"></i> <span data-i18n="skillDomain">Lĩnh vực</span></h3>
+                        <div class="tech-tags" data-i18n="skillDomainTags">
+                            <span class="tag">ERP / HRMS</span>
+                            <span class="tag">Quản lý quảng cáo</span>
+                            <span class="tag">Thu thập dữ liệu</span>
+                            <span class="tag">Chrome Extension</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3><i class="fas fa-code" aria-hidden="true"></i> Web & Frontend</h3>
+                        <div class="tech-tags">
+                            <span class="tag">HTML5/CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">WordPress</span>
+                            <span class="tag">WooCommerce</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <h2 class="section-title" data-i18n="svcTitle">Tôi Có Thể Giúp Gì?</h2>
+                <div class="service-list">
+                    <div class="service-item">
+                        <h3><i class="fas fa-cogs icon-primary" aria-hidden="true"></i> <span data-i18n="svc1Title">Backend & API</span></h3>
+                        <p data-i18n="svc1Desc">Thiết kế và xây dựng RESTful API, hệ thống backend với FastAPI/Django — chú trọng khả năng mở rộng và dễ bảo trì.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3><i class="fas fa-building icon-secondary" aria-hidden="true"></i> <span data-i18n="svc2Title">ERP / Odoo</span></h3>
+                        <p data-i18n="svc2Desc">Phát triển, tùy biến module Odoo và hệ thống ERP/HRMS phù hợp với quy trình vận hành của doanh nghiệp.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3><i class="fas fa-brain icon-pink" aria-hidden="true"></i> <span data-i18n="svc3Title">Tích hợp AI</span></h3>
+                        <p data-i18n="svc3Desc">Đưa LLM (OpenAI, Gemini) vào quy trình sẵn có để tự động hóa đánh giá, phân loại dữ liệu và xây dựng bot trợ lý nội bộ.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3><i class="fas fa-puzzle-piece icon-primary" aria-hidden="true"></i> <span data-i18n="svc4Title">Công cụ tự động hóa</span></h3>
+                        <p data-i18n="svc4Desc">Chrome extension, công cụ thu thập và đồng bộ dữ liệu giúp đội ngũ bớt thao tác thủ công.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-alt">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-box stroke-gradient">
+                        <h2 data-i18n="contactTitle">Cùng Trao Đổi</h2>
+                        <p data-i18n="contactDesc">Bạn có dự án cần hỗ trợ, muốn hợp tác, hay đơn giản là muốn trò chuyện về Python và AI? Đừng ngại nhắn cho tôi.</p>
+                        <a href="mailto:anhntcn@gmail.com" class="btn btn-primary contact-email"><i class="fas fa-envelope" aria-hidden="true"></i> anhntcn@gmail.com</a>
+                        <p class="contact-meta"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span data-i18n="contactLoc">Hà Nội, Việt Nam · Có thể làm việc remote</span></p>
+                    </div>
+
+                    <div class="support-box">
+                        <div class="support-icon"><i class="fas fa-mug-hot" aria-hidden="true"></i></div>
+                        <h2 data-i18n="supportTitle">Ủng Hộ Tôi</h2>
+                        <p data-i18n="supportDesc">Nếu những chia sẻ của tôi hữu ích với bạn, một ly cà phê sẽ là động lực để tôi tiếp tục sáng tạo.</p>
+                        <a href="#" id="donate-btn" class="coffee-btn"><i class="fas fa-coffee" aria-hidden="true"></i> <span data-i18n="supportCta">Mời tôi một ly cà phê</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://github.com/anhntcn" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/anhntcn/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:anhntcn@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://t.me/anhntcn" title="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="https://github.com/anhntcn" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/anhntcn/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="mailto:anhntcn@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                <a href="https://t.me/anhntcn" target="_blank" rel="noopener" title="Telegram" aria-label="Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a>
             </div>
-            <p>&copy; 2024 Anhnt. All rights reserved.</p>
-            <p style="font-size: 0.8rem; margin-top: 10px;">Designed with <i class="fas fa-heart" style="color: red;"></i> and minimal code.</p>
+            <p>&copy; <span class="js-year">2026</span> Nguyễn Tuấn Anh.</p>
         </div>
     </footer>
 
     <!-- Donate Modal -->
-    <div id="donate-modal" class="modal">
+    <div id="donate-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="donate-title">
         <div class="modal-content stroke-gradient">
-            <span class="close-modal">&times;</span>
-            <h3 style="margin-bottom: 10px; color: var(--accent-primary);">Cảm ơn bạn đã ủng hộ! ❤️</h3>
-            <p style="font-size: 0.9rem; color: var(--text-muted);">Quét mã QR bên dưới để donate</p>
-            
+            <button type="button" class="close-modal" aria-label="Close">&times;</button>
+            <h3 id="donate-title" class="modal-title" data-i18n="modalTitle">Cảm ơn bạn đã ủng hộ! ❤️</h3>
+            <p class="modal-sub" data-i18n="modalSub">Quét mã QR bên dưới để donate</p>
+
             <div class="qr-container">
-                <img src="images/qr.png" alt="anhntcn_qr" class="qr-code">
+                <img src="images/qr.png" alt="QR Techcombank Nguyen Tuan Anh" class="qr-code" width="200" height="200">
             </div>
-            
+
             <div class="bank-info">
-                <p style="margin-bottom: 5px;"><i class="fas fa-university"></i> <strong>VPBank</strong></p>
-                <div class="copy-box" style="background: rgba(255,255,255,0.05); padding: 8px; border-radius: 5px; margin-bottom: 5px; cursor: pointer;" title="Click để copy">
-                    <span id="bank-acc" style="font-family: var(--font-code); color: var(--accent-secondary);">555100001111</span> <i class="fas fa-copy" style="font-size: 0.8rem;"></i>
-                </div>
-                <p style="font-size: 0.9rem;">NGUYEN TUAN ANH</p>
+                <p class="bank-name"><i class="fas fa-university" aria-hidden="true"></i> <strong>Techcombank</strong></p>
+                <button type="button" class="copy-box" title="Copy">
+                    <span id="bank-acc">6666 3333 6633</span> <i class="fas fa-copy" aria-hidden="true"></i>
+                </button>
+                <p class="bank-owner">NGUYEN TUAN ANH</p>
             </div>
         </div>
     </div>

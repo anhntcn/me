@@ -1,26 +1,29 @@
 # Nguyễn Tuấn Anh 👋
 
 Chào mừng bạn đến với mã nguồn website cá nhân của tôi. Repository này chứa toàn bộ code frontend cho trang Profile/Portfolio chính thức của tôi.
-<!-- 
-🔗 **Live Website:** [https://your-website.com](https://your-website.com) -->
+
+🔗 **Live Website:** [https://anhntcn.github.io/me/](https://anhntcn.github.io/me/)
 
 ---
 
 ### 👨‍💻 Về Tôi
 
-Tôi là một **Senior Frontend Engineer** & **Creative Web Designer** với nền tảng vững chắc về Backend và DevOps. Tôi đam mê xây dựng các sản phẩm phần mềm hiện đại, tối ưu trải nghiệm người dùng và tích hợp AI vào thực tế.
+Tôi là **kỹ sư Python Backend** tại Hà Nội, có kinh nghiệm phát triển hệ thống ERP/HRMS, 3 năm dẫn dắt team phát triển, và hiện đang tích hợp AI/LLM (OpenAI, Gemini) vào sản phẩm thực tế.
 
-*   **Frontend:** Vue.js, JavaScript (ES6+), HTML5/CSS3.
-*   **Backend & APIs:** Python (Django, FastAPI, Flask), Odoo.
-*   **Database:** PostgreSQL, MySQL, MongoDB.
-*   **DevOps:** Docker, Git, Linux.
+*   **Backend & APIs:** Python (FastAPI, Django, Flask), Odoo, Celery, PHP.
+*   **AI / LLM:** OpenAI API, Gemini API, structured output.
+*   **Database:** PostgreSQL, MySQL, MongoDB, Redis.
+*   **DevOps & Cloud:** Docker, Git, Linux, Google Cloud.
+*   **Web:** HTML5/CSS3, JavaScript, Vue.js, WordPress.
 
 ### 🚀 Mục Tiêu
 
 Trang web này được tôi xây dựng để:
 1.  Giới thiệu các dự án và kỹ năng kỹ thuật của mình.
 2.  Kết nối với các cơ hội hợp tác phát triển phần mềm.
-3.  Chia sẻ kiến thức và đóng góp cho cộng đồng mã nguồn mở.
+3.  Chia sẻ kiến thức về Python, ERP và AI.
+
+Trang là HTML/CSS/JS thuần, không cần build. Hỗ trợ song ngữ Việt/Anh (nút chuyển ngôn ngữ hoặc `?lang=en`).
 
 ---
 
