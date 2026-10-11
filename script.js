@@ -71,7 +71,7 @@ const I18N_EN = {
     contactLoc: 'Hanoi, Vietnam · Open to remote work',
 
     supportTitle: 'Support Me',
-    supportDesc: 'If my work has been useful to you, a cup of coffee keeps me motivated to keep building and sharing.',
+    supportDesc: 'If I've helped you out in some way, or you'd simply like to buy me a coffee — I'd really appreciate it.',
     supportCta: 'Buy me a coffee',
     modalTitle: 'Thank you for your support! ❤️',
     modalSub: 'Scan the QR code below to donate',
